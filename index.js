@@ -46,11 +46,12 @@ return inquirer
 
     {
         type: 'list',
-        name: 'licence',
-        message: 'Which licence template would you like to use?',
+        name: 'license',
+        message: 'Which licensse template would you like to use?',
         choices: ['MIT', 'Apache', 'GNU', 'Creative Commons'],
 
         // RE THE ABOVE, STILL TO DO: When a user chooses a license for their application from a list of options then a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
+        //it's HARD to find licence badges - shall I tailor my choices above to what I can find online? How many options shall I list. Does it have to be the same licence options as GitHub?
     },
    
     {
@@ -69,58 +70,64 @@ return inquirer
 
 //below generates a string template literal for the MARKDOWN from the above input (inherently called answers by node and/or inquirer?)
 function generateREADME(answers) {
-    return `
-    # ${answers.title}
+return `
+# ${answers.title}
 
-    ## ${answers.desc}
+## ${answers.desc}
     
+## Table of Contents
 
-    ## Table of Contents
+* [Installation](#installation)
+* [Requirements](#requirements)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
+      
+## Installation
+    
+${answers.inst}
+    
+## Requirements/Dependencies
 
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Credits](#credits)
-    * [License](#license)
-    * [Contributing] (#contributing)
-    * [Tests] (#tests)
-    * [Questions] (#questions)
-   
-    ## Installation
+* Node.js v6 or later
+* NPM 
+* Inquirer node.js module
     
-    ${answers.inst}
+## Usage 
     
-    ## Usage 
-    
-    ${answers.usage}
-    
-    ## License
-    
-    This application is covered by the ${answers.licence} licence.
-    
-    ## Contributing
-    
-    ${answers.contrib}
-    
-    ## Tests
-    
-    ${answers.tests}
-    
-    ## Questions?
+${answers.usage}
 
-    You can get in touch with any queries (remember to include the name of the app and the type of system you are working on) via: 
+## License
+
+This application is covered by the ${answers.license} license. See the LICENSE file for more details.
     
-    http://github.com/${answers.github}
+## Contributing
 
-    or email
+${answers.contrib}
 
-    ${answers.email}
+## Tests
+
+${answers.tests}
+    
+## Questions?
+
+You can get in touch with any queries (remember to include the name of the app and the type of system you are working on) via: 
+
+http://github.com/${answers.github}
+
+or email
+
+${answers.email}
     `;
    
   }
     //TO DO LIST FOR ABOVE MD FILE
-    //check that the above generates a working link!
-    //make sure the table of contents is correct and that links/navigation works
+    //make sure the table of contents is correct
     //normally would include a link to the repo, but is this even possible??
+    //Do I need the requirements/dependencies here or are they for the README for the actual repo?
 
 
   //how does using writeFileSync differ from writeFileAsync (bootcamp slides solution used the latter)?

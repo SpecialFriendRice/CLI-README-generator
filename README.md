@@ -1,46 +1,54 @@
 
-    # Tea
+# Chips
 
-    ## Makes tea
+## It makes chips
     
+## Table of Contents
 
-    ## Table of Contents
-
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [Credits](#credits)
-    * [License](#license)
-    * [Contributing] (#contributing)
-    * [Tests] (#tests)
-    * [Questions] (#questions)
+* [Installation](#installation)
+* [Requirements](#requirements)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
    
-    ## Installation
     
-    Put in a cup
     
-    ## Usage 
+## Installation
     
-    You can have a nice brew
+Have a computer
     
-    ## License
-    
-    This application is covered by the Creative Commons licence.
-    
-    ## Contributing
-    
-    Send me cold hard cash
-    
-    ## Tests
-    
-    Look at it. It's tea
-    
-    ## Questions?
+## Requirements/Dependencies
 
-    You can get in touch with any queries (remember to include the name of the app and the type of system you are working on) via: 
+* Node.js v6 or later
+* NPM 
+* Inquirer node.js module
     
-    http://github.com/TeaBaggery
+## Usage 
+    
+Heat up the oil and fry
 
-    or email
+## License
 
-    teabag@pot.com
+This application is covered by the Apache license. See the LICENSE file for more details.
+    
+## Contributing
+
+Give me all your cash
+
+## Tests
+
+Sniff it
+    
+## Questions?
+
+You can get in touch with any queries (remember to include the name of the app and the type of system you are working on) via: 
+
+http://github.com/MacaroniPete
+
+or email
+
+pete@macaroni.com
     
