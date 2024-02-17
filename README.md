@@ -1,26 +1,23 @@
 
-# Chips
+# Pumpkin Pie        ![license badge](https://img.shields.io/badge/License-Mozilla-blue.svg)
 
-## It makes chips
+## Makes a delicious pie
     
 ## Table of Contents
 
 * [Installation](#installation)
 * [Requirements](#requirements)
 * [Usage](#usage)
-* [Credits](#credits)
 * [License](#license)
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
-   
-    
-    
+      
 ## Installation
     
-Have a computer
+Don't have a soggy bottom
     
-## Requirements/Dependencies
+## Requirements
 
 * Node.js v6 or later
 * NPM 
@@ -28,27 +25,27 @@ Have a computer
     
 ## Usage 
     
-Heat up the oil and fry
+Use fresh or tinned filling. Turn computer on and preheat overn
 
 ## License
 
-This application is covered by the Apache license. See the LICENSE file for more details.
+This application is covered by the Mozilla license. See the LICENSE file for more details.
     
 ## Contributing
 
-Give me all your cash
+Share aa slice of pie and codee
 
 ## Tests
 
-Sniff it
+Check the temperature before you eat it
     
 ## Questions?
 
 You can get in touch with any queries (remember to include the name of the app and the type of system you are working on) via: 
 
-http://github.com/MacaroniPete
+http://github.com/Pumpkin
 
 or email
 
-pete@macaroni.com
+Pumpkin@patch.com
     

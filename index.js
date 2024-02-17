@@ -29,7 +29,7 @@ return inquirer
     {
         type: 'input',
         name: 'usage',
-        message: 'Please provide instructions for how to give use the app, giving practical examples of usage',
+        message: 'Please provide instructions for how to use the app, giving practical examples of usage',
     },
 
     {
@@ -47,17 +47,20 @@ return inquirer
     {
         type: 'list',
         name: 'license',
-        message: 'Which licensse template would you like to use?',
-        choices: ['MIT', 'Apache', 'GNU', 'Creative Commons'],
+        message: 'Which license template would you like to use?',
+        choices: ['MIT', 'Apache', 'GNU', 'Mozilla'],
 
         // RE THE ABOVE, STILL TO DO: When a user chooses a license for their application from a list of options then a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
         //it's HARD to find licence badges - shall I tailor my choices above to what I can find online? How many options shall I list. Does it have to be the same licence options as GitHub?
+        //badges seem to be generally added to the "header" area next to the title
+        //Do i need to write a separate function to say if answers.license === GNU etc? A shortcut might actually be just to use a badge generating website where the url just has the licence name at the end of it, so embed it as an image with the url and a ${answers.license} in it
+
     },
    
     {
         type: 'input',
         name: 'github',
-        message: 'Please enter your GiHub username',
+        message: 'Please enter your GitHub username',
     },
 
     {
@@ -71,7 +74,7 @@ return inquirer
 //below generates a string template literal for the MARKDOWN from the above input (inherently called answers by node and/or inquirer?)
 function generateREADME(answers) {
 return `
-# ${answers.title}
+# ${answers.title}        ![license badge](https://img.shields.io/badge/License-${answers.license}-blue.svg)
 
 ## ${answers.desc}
     
@@ -80,7 +83,6 @@ return `
 * [Installation](#installation)
 * [Requirements](#requirements)
 * [Usage](#usage)
-* [Credits](#credits)
 * [License](#license)
 * [Contributing](#contributing)
 * [Tests](#tests)
@@ -90,7 +92,7 @@ return `
     
 ${answers.inst}
     
-## Requirements/Dependencies
+## Requirements
 
 * Node.js v6 or later
 * NPM 
@@ -125,8 +127,7 @@ ${answers.email}
    
   }
     //TO DO LIST FOR ABOVE MD FILE
-    //make sure the table of contents is correct
-    //normally would include a link to the repo, but is this even possible??
+    //normally would include a link to the repo itself, but is this even possible??
     //Do I need the requirements/dependencies here or are they for the README for the actual repo?
 
 
