@@ -1,51 +1,36 @@
 
-# Pumpkin Pie        ![license badge](https://img.shields.io/badge/License-Mozilla-blue.svg)
+# CLI README Generator        ![license badge](https://img.shields.io/badge/License-MIT-blue.svg)
 
-## Makes a delicious pie
-    
-## Table of Contents
+## Generates README markdown files directly from command line input
 
-* [Installation](#installation)
-* [Requirements](#requirements)
-* [Usage](#usage)
-* [License](#license)
-* [Contributing](#contributing)
-* [Tests](#tests)
-* [Questions](#questions)
+A high-quality README file is a vital part of a GitHub repository, especially if you are looking for future contributions. Divided into clear sections, it should be a roadmap for user as well as collaborators, explaining clearly why and how the app was created, how to install it and crediting any sources. Having the ability to generate a clear README directly from the command line frees up time that can be better spent on improving the app itself.
+
+ ## Links
+
+[GitHub Repo](https://github.com/specialfriendrice/CLI-README-generator)
+
+[Walkthrough video hosted on Screencastify/Google](https://app.screencastify.com/v3/watch/Ob7pviWaQId0MecR3KgR)
       
-## Installation
-    
-Don't have a soggy bottom
     
 ## Requirements
 
 * Node.js v6 or later
 * NPM 
 * Inquirer node.js module
-    
-## Usage 
-    
-Use fresh or tinned filling. Turn computer on and preheat overn
 
 ## License
 
-This application is covered by the Mozilla license. See the LICENSE file for more details.
+This application is covered by the MIT license. See the LICENSE file for more details.
     
-## Contributing
-
-Share aa slice of pie and codee
-
-## Tests
-
-Check the temperature before you eat it
     
 ## Questions?
 
 You can get in touch with any queries (remember to include the name of the app and the type of system you are working on) via: 
 
-http://github.com/Pumpkin
+http://github.com/SpecialFriendRice
 
-or email
 
-Pumpkin@patch.com
+## Credits
+
+Referred to own notes from course, Xpert Learning Assistant for syntax queries and StackOverflow/W3Schools for background reading. Module 11 Mini-project code re-used as basis for structure.
     
